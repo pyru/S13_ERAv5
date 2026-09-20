@@ -1,0 +1,10 @@
+{
+ "winner": "leapfrog",
+ "forced": false,
+ "why": {
+  "revnet": "val 4.1297, 55,181 tok/s",
+  "midpoint": "val 4.0794, 51,018 tok/s",
+  "leapfrog": "val 3.8611, 47,566 tok/s",
+  "euler": "excluded: grad cosine vs autograd (trained weights) 0.0093 < 0.999"
+ }
+}

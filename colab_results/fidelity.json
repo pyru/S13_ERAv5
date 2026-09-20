@@ -1,0 +1,54 @@
+{
+ "amp": "fp16",
+ "batch_size": 8,
+ "results": {
+  "euler": {
+   "init": {
+    "cos": 0.8463430248417284,
+    "rel_err": 0.6079647263254597,
+    "finite": true
+   },
+   "trained": {
+    "cos": 0.009254344836349996,
+    "rel_err": 0.9999788292343664,
+    "finite": true
+   }
+  },
+  "revnet": {
+   "init": {
+    "cos": 0.9999999201705495,
+    "rel_err": 0.0003995930857159971,
+    "finite": true
+   },
+   "trained": {
+    "cos": 0.9998472185063078,
+    "rel_err": 0.01748202546923122,
+    "finite": true
+   }
+  },
+  "midpoint": {
+   "init": {
+    "cos": 0.9999998937333174,
+    "rel_err": 0.00046101430607517864,
+    "finite": true
+   },
+   "trained": {
+    "cos": 0.999984643807323,
+    "rel_err": 0.0055422603680402235,
+    "finite": true
+   }
+  },
+  "leapfrog": {
+   "init": {
+    "cos": 0.9999958276675696,
+    "rel_err": 0.0028887718060281644,
+    "finite": true
+   },
+   "trained": {
+    "cos": 0.9999468824225743,
+    "rel_err": 0.010307192730111445,
+    "finite": true
+   }
+  }
+ }
+}
