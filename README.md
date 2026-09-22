@@ -9,6 +9,13 @@ peak memory and other findings.
 Colab, pick a GPU runtime and run all cells. It writes `report/results.md` with every table
 and plot below filled in from the actual runs.
 
+📓 **[`S13_Reversible_LM_executed.ipynb`](S13_Reversible_LM_executed.ipynb)** is that notebook
+as it came back from Colab, with outputs: the T4 banner, `all reversible tests passed`, the
+variant selection, and the rendered report with its charts. Its training stages print
+"exists, skipping" because this was the session that reran only `run3` — the earlier stages
+were already finished on Drive. The numbers from all of them are in
+[`colab_results/`](colab_results/).
+
 All numbers below come from one Colab session on a **Tesla T4 (15 GB, fp16 + GradScaler)**,
 19 Sep 2026. The raw JSON and the generated report are in [`colab_results/`](colab_results/)
 ([`report/results.md`](colab_results/report/results.md)).
@@ -200,6 +207,9 @@ contraction. That is true in the tiny test model but not in the real one (findin
 | [`run_all.py`](run_all.py) | every stage in order, resumable |
 | [`make_report.py`](make_report.py) | `runs/` → `report/results.md` + plots |
 | [`build_notebook.py`](build_notebook.py) | regenerates the notebook from the sources |
+| [`S13_Reversible_LM.ipynb`](S13_Reversible_LM.ipynb) | the runnable Colab notebook |
+| [`S13_Reversible_LM_executed.ipynb`](S13_Reversible_LM_executed.ipynb) | the same notebook with Colab's outputs |
+| [`colab_results/`](colab_results/) | raw JSON from every run + the generated report and charts |
 
 ## Measurement notes
 
